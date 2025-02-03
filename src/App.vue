@@ -1,11 +1,9 @@
 <script setup lang="ts">
-  import Header from './components/Header.vue'
-  import HeroSection from './components/HeroSection.vue'
+  import landingPage from './view/landing-page.vue';
+  import Header from './components/Header.vue';
 </script>
 
 <template>
-  <Header />
-  <HeroSection />
+  <Header/>
+  <landingPage />
 </template>
-
-

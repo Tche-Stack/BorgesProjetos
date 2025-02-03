@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+@layer theme {
+    :root {
+        --primary-500: #B22222;
+        --primary-600: #9B1C1C;
+        --secondary-500: #003366;
+        --secondary-600: #002244;
+        --accent-500: #CC5500;
+        --accent-600: #B34700;
+        --neutral-50: #FFFFFF;
+        --neutral-100: #E0E0E0;
+        --neutral-800: #333333;
+        --warning-500: #FFD700;
+    }
+
+}
+
+@layer base {
+  :root {
+    /* Primary - Vermelho profissional (antes era azul) */
+    --primary-500: #dc2626;  /* Vermelho base */
+    --primary-600: #b91c1c;  /* Vermelho escuro para hover */
+    --primary-400: #ef4444;  /* Vermelho mais claro */
+    --primary-300: #f87171;  /* Vermelho ainda mais claro */
+    
+    /* Secondary - Vermelho escuro (antes era azul escuro) */
+    --secondary-500: #991b1b;
+    --secondary-600: #7f1d1d;
+    --secondary-400: #b91c1c;
+    
+    /* Accent - Vermelho terroso (antes era dourado) */
+    --accent-500: #dc2626;
+    --accent-600: #b91c1c;
+    --accent-400: #ef4444;
+    
+    /* Neutral - Mantido os tons de cinza */
+    --neutral-50: #ffffff;
+    --neutral-100: #f3f4f6;
+    --neutral-200: #e5e7eb;
+    --neutral-300: #d1d5db;
+    --neutral-600: #4b5563;
+    --neutral-700: #374151;
+    --neutral-800: #1f2937;
+    
+    /* Warning */
+    --warning-500: #FFD700;
+    
+    /* Novas cores adicionadas */
+    --neutral-200: #f0f0f0;
+    --neutral-300: #d4d4d4;
+    --secondary-400: #004477;
+    --accent-400: #dd6600;
+    
+    /* Cores adicionais */
+    --neutral-600: #666666;
+    --neutral-700: #4d4d4d;
+    --primary-400: #c92828;
+    --primary-300: #d94444;
+  }
+}
+
+
