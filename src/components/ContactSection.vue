@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import type { ContactForm,Service } from '../types'
+  import { contactInfo } from '../data/contactInfo'
 
   const emit = defineEmits(['submit'])
   const props = defineProps<{ services: Service[] }>()
@@ -52,37 +53,36 @@
               <div class="flex items-start space-x-4">
                 <div class="bg-(--primary-500) p-3 rounded-lg">
                   <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="contactInfo.phone.icon" />
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-(--neutral-800)">Telefone</h4>
-                  <p class="text-(--neutral-600)">(11) 99999-9999</p>
+                  <h4 class="text-lg font-medium text-(--neutral-800)">{{ contactInfo.phone.label }}</h4>
+                  <p class="text-(--neutral-600)">{{ contactInfo.phone.number }}</p>
                 </div>
               </div>
 
               <div class="flex items-start space-x-4">
                 <div class="bg-(--primary-500) p-3 rounded-lg">
                   <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="contactInfo.email.icon" />
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-(--neutral-800)">Email</h4>
-                  <p class="text-(--neutral-600)">contato@empresa.com</p>
+                  <h4 class="text-lg font-medium text-(--neutral-800)">{{ contactInfo.email.label }}</h4>
+                  <p class="text-(--neutral-600)">{{ contactInfo.email.address }}</p>
                 </div>
               </div>
 
               <div class="flex items-start space-x-4">
                 <div class="bg-(--primary-500) p-3 rounded-lg">
                   <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="contactInfo.address.icon" />
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-(--neutral-800)">Endereço</h4>
-                  <p class="text-(--neutral-600)">Rua Example, 123 - São Paulo, SP</p>
+                  <h4 class="text-lg font-medium text-(--neutral-800)">{{ contactInfo.address.label }}</h4>
+                  <p class="text-(--neutral-600)">{{ contactInfo.address.text }}</p>
                 </div>
               </div>
             </div>

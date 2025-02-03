@@ -1,22 +1,18 @@
 export const companyHighlights = [
   {
     title: 'Experiência Comprovada',
-    description: '15 anos no mercado da construção civil',
-    stats: '150+ projetos entregues'
+    description: '+10 anos no mercado de prevenção de incêndios',
+    stats: '100+ projetos entregues'
   },
   {
-    title: 'Equipe Qualificada',
-    description: 'Profissionais altamente capacitados',
-    stats: '50+ especialistas'
+    title: 'Atendimento em todo o estado',
+    description: 'atendemos todo o estado de Rio Grande do Sul',
+    stats: '100% de satisfação dos clientes'
   },
   {
-    title: 'Compromisso com Qualidade',
-    description: 'Certificações internacionais de qualidade',
-    stats: '100% projetos aprovados'
-  },
-  {
-    title: 'Sustentabilidade',
-    description: 'Práticas eco-friendly em todos os projetos',
-    stats: '30% economia de energia'
+    title: 'Eficiência e qualidade',
+    description: 'sempre buscamos a melhor solução para o seu problema',
+    stats: 'eficiência e qualidade em cada projeto'
   }
+
 ] 

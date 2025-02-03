@@ -2,33 +2,38 @@ import type { Service } from '../types'
 
 export const services: Service[] = [
   {
-    title: 'Construção de Casas',
-    description: 'Construímos casas com qualidade e segurança',
-    icon: 'fas fa-building'
+    title: 'Elaboração de PPCI',
+    description: 'Elaboramos projetos de prevenção de incêndios para você',
+    icon: 'fas fa-map'
   },
   {
-    title: 'Reformas',
-    description: 'Fazemos reformas em casas e apartamentos',
-    icon: 'fas fa-hammer'
+    title: 'Instalação e vendas de extintores',
+    description: 'Fornecemos e instalamos o extintor para voce',
+    icon: 'fas fa-fire-extinguisher'
   },
   {
-    title: 'Pintura',
-    description: 'Pintamos sua casa com as cores que você desejar',
-    icon: 'fas fa-paint-roller'
+    title: 'Execução de alarme de incêndio',
+    description: 'Fornecemos e executamos o projeto de alarme de incêndio para você',
+    icon: 'fas fa-bell'
   },
+
   {
-    title: 'Construção de Casas',
-    description: 'Construímos casas com qualidade e segurança',
-    icon: 'fas fa-building'
+    title: 'Instalação e manutenção de hidrantes',
+    description: 'instalamos e realizamos a manutenção dos hidrantes para voce',
+    icon: 'fa-solid fa-faucet'
   },
+
+
   {
-    title: 'Reformas',
-    description: 'Fazemos reformas em casas e apartamentos',
-    icon: 'fas fa-hammer'
+    title: 'Instalação e manutenção de Iluminação de Emergência',
+    description: 'Fazemos a instalação e a manutenção da iluminação de emergência para voce',
+    icon: 'fas fa-lightbulb'
   },
+
   {
-    title: 'Pintura',
-    description: 'Pintamos sua casa com as cores que você desejar',
-    icon: 'fas fa-paint-roller'
+    title: 'Sinalização de emergência',
+    description: 'Instalamos todas as sinalizações de emergência para voce',
+    icon: 'fa-solid fa-person-running'
   }
 ] 
+
