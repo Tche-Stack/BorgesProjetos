@@ -19,8 +19,7 @@ const closeMenu = () => {
 }
 
 const whatsappLink = computed(() => {
-  const phoneNumber = businessInfo.phone.replace(/\D/g, '')
-  return `https://wa.me/${phoneNumber}`
+  return `https://wa.me/${businessInfo.phoneE164}`
 })
 </script>
 

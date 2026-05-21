@@ -7,11 +7,23 @@ import FooterSection from "../components/FooterSection.vue";
 
 import { services } from '../data/services'
 import { clients } from '../data/clients'
+import { businessInfo } from '../data/businessInfo'
 import type { ContactForm } from './../types'
 
 const handleFormSubmit = (formData: ContactForm) => {
-  console.log('Form submitted', formData)
-  alert('Formulário enviado com sucesso!')
+  const lines = [
+    'Olá! Vim pelo site da Borges Projetos.',
+    '',
+    `*Nome:* ${formData.name}`,
+    `*Email:* ${formData.email}`,
+    `*Telefone:* ${formData.phone}`,
+    `*Serviço de interesse:* ${formData.service || 'não informado'}`,
+    '',
+    '*Mensagem:*',
+    formData.message || '(sem mensagem)'
+  ]
+  const text = encodeURIComponent(lines.join('\n'))
+  window.open(`https://wa.me/${businessInfo.phoneE164}?text=${text}`, '_blank')
 }
 </script>
 
