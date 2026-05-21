@@ -1,22 +1,28 @@
 import type { Client } from '../types'
 
-export const clients:Client[] = [
+export const clients: Client[] = [
   {
-    name: 'Empresa ABC',
-    industry: 'Construção Civil',
-    logo: 'https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12',
-    description: 'Parceria em mais de 10 projetos comerciais'
+    name: 'Meli+',
+    industry: 'Logística / E-commerce',
+    logo: '/clients/meliplus.webp',
+    description: 'Operação logística do Mercado Livre na região sul'
   },
   {
-    name: 'Incorporadora XYZ',
-    industry: 'Incorporação',
-    logo: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09',
-    description: 'Desenvolvimento de 5 empreendimentos residenciais'
+    name: 'Urban Serviços e Transportes',
+    industry: 'Transporte de Cargas',
+    logo: '/clients/urban.jpg',
+    description: 'Transporte rodoviário com filial em Alvorada/RS'
   },
   {
-    name: 'Construtora 123',
-    industry: 'Construção Civil',
-    logo: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09',
-    description: 'Parceria em obras de grande porte'
+    name: 'Grupo Magecolor',
+    industry: 'Pintura e Anodização de Alumínio',
+    logo: '/clients/magecolor.png',
+    description: 'Indústria de acabamentos em alumínio em Alvorada/RS'
+  },
+  {
+    name: 'Netuno Piscinas',
+    industry: 'Indústria de Piscinas',
+    logo: '/clients/netuno.svg',
+    description: 'Fábrica de acessórios para piscinas em Canoas/RS'
   }
-] 
+]

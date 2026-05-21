@@ -6,10 +6,10 @@ import logolight from '../assets/Logo-light.svg'
 import { businessInfo } from '../data/businessInfo'
 
 const navItems = ref([
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'Início', path: '#inicio' },
+  { name: 'Serviços', path: '#servicos' },
+  { name: 'Clientes', path: '#clientes' },
+  { name: 'Contato', path: '#contato' }
 ])
 
 const isMenuOpen = ref(false)

@@ -4,7 +4,7 @@
   import { contactInfo } from '../data/contactInfo'
 
   const emit = defineEmits(['submit'])
-  const props = defineProps<{ services: Service[] }>()
+  defineProps<{ services: Service[] }>()
 
   const form = ref<ContactForm>({
     name: '',
@@ -27,7 +27,7 @@
 </script>
 
 <template>
-  <section class="py-24 bg-(--neutral-100) relative overflow-hidden">
+  <section id="contato" class="py-24 bg-(--neutral-100) relative overflow-hidden scroll-mt-20">
     <!-- Padrão de bolinhas à esquerda -->
     <div class="absolute left-0 top-0 h-full w-64 opacity-10 dots-pattern"></div>
 

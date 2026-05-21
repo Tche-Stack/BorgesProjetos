@@ -23,7 +23,7 @@ const buttonText = "Solicitar Orçamento"
 </script>
 
 <template>
-  <section class="relative min-h-screen">
+  <section id="inicio" class="relative min-h-screen">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 bg-[url('@/assets/poa.webp')] bg-cover bg-center">
       <div class="absolute inset-0 bg-black/50"></div>

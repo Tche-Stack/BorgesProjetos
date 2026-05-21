@@ -15,7 +15,7 @@ const isAnimationPaused = ref(false)
 </script>
 
 <template>
-  <section class="py-16 bg-(--neutral-800) overflow-hidden relative">
+  <section id="clientes" class="py-16 bg-(--neutral-800) overflow-hidden relative scroll-mt-20">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h3 class="text-3xl font-bold text-center mb-12 text-(--neutral-50)">Nossos Clientes</h3>
       
@@ -42,10 +42,10 @@ const isAnimationPaused = ref(false)
             >
               <div class="p-6">
                 <div class="flex items-center mb-4">
-                  <img 
-                    :src="client.logo" 
-                    :alt="client.name" 
-                    class="w-16 h-16 object-cover rounded-full bg-(--neutral-100)"
+                  <img
+                    :src="client.logo"
+                    :alt="client.name"
+                    class="w-16 h-16 object-contain rounded-full bg-(--neutral-50) p-2"
                   >
                   <div class="ml-4">
                     <h4 class="text-xl font-semibold text-(--neutral-50)">{{ client.name }}</h4>
@@ -71,10 +71,10 @@ const isAnimationPaused = ref(false)
             >
               <div class="p-6">
                 <div class="flex items-center mb-4">
-                  <img 
-                    :src="client.logo" 
-                    :alt="client.name" 
-                    class="w-16 h-16 object-cover rounded-full bg-(--neutral-100)"
+                  <img
+                    :src="client.logo"
+                    :alt="client.name"
+                    class="w-16 h-16 object-contain rounded-full bg-(--neutral-50) p-2"
                   >
                   <div class="ml-4">
                     <h4 class="text-xl font-semibold text-(--neutral-50)">{{ client.name }}</h4>
