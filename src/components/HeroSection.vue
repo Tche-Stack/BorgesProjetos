@@ -44,9 +44,9 @@ const buttonText = "Solicitar Orçamento"
             <p class="text-lg md:text-xl text-(--neutral-100) mb-4 md:mb-10">
               {{ description }}
             </p>
-            <button class="w-full md:w-auto bg-(--neutral-50) text-(--primary-500) px-6 md:px-10 py-3 md:py-4 rounded-lg hover:bg-(--neutral-100) transition-colors text-base md:text-lg font-semibold mb-4 md:mb-0">
+            <a href="#contato" class="inline-block w-full md:w-auto text-center bg-(--neutral-50) text-(--primary-500) px-6 md:px-10 py-3 md:py-4 rounded-lg hover:bg-(--neutral-100) transition-colors text-base md:text-lg font-semibold mb-4 md:mb-0">
               {{ buttonText }}
-            </button>
+            </a>
           </div>
 
         </div>
